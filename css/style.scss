@@ -382,17 +382,19 @@ body{
             height: 404px;
 
             &--text{
-                line-height: 56px;
+                line-height: 90px;
                 font-size: 34px;
+                margin: 0;
             }
         }
 
         .price__item-sup--additionally-insurance--price{
-            margin-right: 155px;
+            margin-right: 75px;
 
             &-numb{
-                line-height: 56px;
+                line-height: 90px;
                 font-size: 34px;
+                margin: 0;
                 @extend %rubik-medium;
             }
         }
