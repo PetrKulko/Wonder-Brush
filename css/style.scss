@@ -211,13 +211,14 @@ body{
             border-radius: 10px;
             display: flex;
             flex-direction: row-reverse;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             color: #291247;
             @extend %rubik-bold;
             font-size: 30px;
             line-height: 40px;
             margin-top: 33px;
+            padding-right: 25px;
 
             &--text{
                 display: block;
@@ -311,7 +312,7 @@ body{
             border-radius: 10px;
             color: #291247;
             display: flex;
-            padding: 35px 62px;
+            padding: 36px;
             margin-top: 33px;
         }
 
@@ -370,7 +371,7 @@ body{
 
         .price__item-sup--additionally-insurance{
             display: flex;
-            justify-content: space-between;
+            justify-content: start;
             color: #291247;
             width: 688px;
             background-color: #FCFCFC;
@@ -378,21 +379,38 @@ body{
             border-radius: 10px;
             margin-top: 43px;
             padding: 36px;
-            min-height: 404px;
+            height: 404px;
 
             &--text{
                 line-height: 56px;
-                font-style: 34px;
+                font-size: 34px;
             }
         }
 
         .price__item-sup--additionally-insurance--price{
+            margin-right: 155px;
 
             &-numb{
                 line-height: 56px;
-                font-style: 34px;
+                font-size: 34px;
                 @extend %rubik-medium;
             }
+        }
+
+        .price__item-sup--additionally-promo-title{
+            position: relative;
+            padding-right: 50px;
+        }
+        
+        .price__item-sup--additionally-promo-title::before{
+            content: "";
+            background-image: url(../img/icon__price-2.svg);
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 42px;
+            right: 0;
+            top: 10px;
+            position: absolute;
         }
     }
 }
