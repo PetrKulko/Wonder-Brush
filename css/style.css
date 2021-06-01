@@ -342,6 +342,11 @@ h2 {
 button {
   cursor: pointer; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400; }
@@ -350,7 +355,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 500; }
 
-.title, .sales__text-content, .sales__text-numb, .sales__title-2, .prise__item-sup--promo-lable, .prise__item-sup--select-price--name, .price__item-contact--label-name--text, .price__item-contact--label-price--text {
+.title, .sales__text-content, .sales__text-numb, .sales__title-2, .prise__item-sup--promo-lable, .prise__item-sup--select-price--name, .price__item-contact--label-name--text, .price__item-contact--label-price--text, .advertising__content-title {
   font-family: 'Rubik', sans-serif;
   font-weight: 700; }
 
@@ -374,7 +379,6 @@ body {
 .header {
   text-align: center; }
   .header__logo {
-    display: block;
     margin-top: 43px; }
 
 .top {
@@ -387,6 +391,9 @@ body {
     position: absolute;
     top: 100px;
     z-index: -1; }
+  .top__img {
+    max-width: 530px;
+    max-height: 570px; }
   .top__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -437,13 +444,15 @@ body {
           justify-content: center; }
   .sales__text-content {
     font-size: 40px;
-    line-height: 86px; }
+    line-height: 86px;
+    max-width: 635px; }
   .sales__text-numb {
     font-size: 60px;
     line-height: 35px;
     color: #99C647;
     margin-left: 10px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    white-space: nowrap; }
 .sales__title {
   color: #FFF;
   background-color: #291247;
@@ -804,7 +813,7 @@ body {
     border-radius: 10px;
     width: 425px;
     height: 48px;
-    padding: 10px 40px 10px 15px;
+    padding: 10px 60px 10px 15px;
     outline: none; }
     .price__item-pay--input:nth-child(2) {
       width: 325px; }
@@ -823,15 +832,9 @@ body {
     border: none;
     margin: 0 auto;
     display: block;
-    position: relative; }
-    .price__item-pay--btn::before {
-      content: "";
-      position: absolute;
-      background: url(../img/card-white.svg) no-repeat;
-      width: 45px;
-      height: 30px;
-      right: 32%;
-      fill: #FCFCFC; }
+    background-image: url(../img/card-white.svg);
+    background-repeat: no-repeat;
+    background-position: 67% 50%; }
   .price__item-pay--services-secured {
     text-align: center;
     margin: 37px 0; }
@@ -850,3 +853,67 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
+
+.cvv__code {
+  background: url(../img/cvv-icon.svg) no-repeat;
+  background-position: 97% 50%; }
+
+.calendar {
+  background: url(../img/calendar-icon.svg) no-repeat;
+  background-position: 94% 50%; }
+
+.cards {
+  background: url(../img/card.svg) no-repeat 40px/32px;
+  background-position: 95% 50%; }
+
+.advertising {
+  margin-bottom: 82px; }
+  .advertising__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #FEFCDC;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    width: 870px;
+    margin: 0 auto;
+    margin-bottom: 18px; }
+    .advertising__content-title {
+      color: #D63422;
+      line-height: 56px;
+      font-size: 34px;
+      margin-right: 20px; }
+  .advertising__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .advertising__text-content {
+      color: #291247;
+      font-size: 28px;
+      line-height: 45px;
+      margin-right: 16px; }
+  .advertising__user-img {
+    width: 315px;
+    height: 294px;
+    margin-right: 191px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+    position: relative; }
+  .advertising__user-text {
+    display: inline-block;
+    position: absolute;
+    right: -330px;
+    bottom: 44px;
+    color: #291247;
+    line-height: 45px;
+    font-size: 28px; }

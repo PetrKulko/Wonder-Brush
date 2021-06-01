@@ -14,16 +14,17 @@
 
     <header class="header">
         <div class="container">
-            <a class="header__logo" href="#">
-                <img class="header__logo-img" src="img/logo.svg" alt="logo">
-            </a>
-        </div>
+            <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-img" src="img/logo.svg" alt="logo">
+                </a>
+            </div>
     </header>
 
     <section class="top">
         <div class="container">
             <div class="top__wrapper">
-                <img class="top__img" src="img/top.png" alt="top">
+                <div class="top__img"><img src="img/top.png" alt="top"></div>
                 <ul class="top__items">
                     <li class="top__item">שלוש פעולות במכשיר אחד פשוט - מייבש שיער, מחליק ומעצב. גם חיסכון בזמן וגם
                         חיסכון
@@ -40,7 +41,7 @@
                 </ul>
             </div>
             <div class="top__btn">
-                <a class="top__btn-link" href="#">הצעה מיוחדת לזמן מוגבל</a>
+                <a class="top__btn-link" href="#top__btn">הצעה מיוחדת לזמן מוגבל</a>
             </div>
         </div>
     </section>
@@ -63,175 +64,221 @@
 
     <section class="prise">
         <div class="container">
-            <div class="prise__items">
-                <div class="prise__item-sup">
-                    <div class="prise__item-sup--promo">
-                        <h3 class="prise__item-sup--promo-title title">
-                            1. בחרי כמות
-                        </h3>
-                        <div class="prise__item-sup--promo-lable">
-                            <div class="prise__item-sup--promo-lable--wrapper">
-                                <p class="prise__item-sup--promo-lable--text">
-                                    ההנחה שלך התקבלה בהצלחה
-                                </p>
-                                <p class="prise__item-sup--promo-lable--text">
-                                    אין לעזוב עמוד זה על מנת לא לאבד אותה
-                                </p>
-                            </div>
-                            <img src="img/lable.svg" alt="lable">
-                        </div>
-                        <div class="prise__item-sup--select">
-                            <div class="prise__item-sup--select-product">
-                                <h3 class="prise__item-sup--select-product--title title">
-                                    כמות
-                                </h3>
-                                <label class="prise__item-sup--select-product--lable">
-                                    <input class="prise__item-sup--select-product--checkbox" type="radio" name="price"
-                                        checked>
-                                    <span class="prise__item-sup--select-product--lable-fake"></span>
-                                    <span class="prise__item-sup--select-product--lable-text">Wonder Brush X 1</span>
-                                </label>
-                                <label class="prise__item-sup--select-product--lable">
-                                    <input class="prise__item-sup--select-product--checkbox" type="radio" name="price">
-                                    <span class="prise__item-sup--select-product--lable-fake"></span>
-                                    <span class="prise__item-sup--select-product--lable-text stiker">Wonder Brush X
-                                        2</span>
-                                </label>
-                                <label class="prise__item-sup--select-product--lable">
-                                    <input class="prise__item-sup--select-product--checkbox" type="radio" name="price">
-                                    <span class="prise__item-sup--select-product--lable-fake"></span>
-                                    <span class="prise__item-sup--select-product--lable-text">Wonder Brush X 3</span>
-                                </label>
-                            </div>
-                            <div class="prise__item-sup--select-price">
-                                <h3 class="prise__item-sup--select-price--name">
-                                    מחיר
-                                </h3>
-                                <p class="prise__item-sup--select-price--text">199 ₪ (199 ₪/ליחידה)</p>
-                                <p class="prise__item-sup--select-price--text">318 ₪ (159 ₪/ליחידה)</p>
-                                <p class="prise__item-sup--select-price--text">417 ₪ (139 ₪/ליחידה)</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="price__item-sup--wrapper">
-                        <div class="price__item-sup--additionally">
-                            <h3 class="price__item-sup--additionally-promo-title title">
-                                שפרי את הזמנתך באמצעות:
+            <form id="prise__form" class="prise__form" action="#" method="post">
+                <div class="prise__items">
+                    <div class="prise__item-sup">
+                        <div class="prise__item-sup--promo">
+                            <h3 class="prise__item-sup--promo-title title">
+                                1. בחרי כמות
                             </h3>
-                            <div class="price__item-sup--additionally-alternative">
-                                <div class="price__item-sup--additionally-alternative-select">
-                                    <label class="price__item-sup--additionally-alternative-select--lable">
-                                        <input class="price__item-sup--additionally-alternative-select--lable-checkbox"
-                                            type="checkbox" name="alternative" checked>
-                                        <span class="price__item-sup--additionally-alternative-select--fake"></span>
-                                        <span class="price__item-sup--additionally-alternative-select--text">אחריות
-                                            לשנתיים</span>
+                            <div class="prise__item-sup--promo-lable">
+                                <div class="prise__item-sup--promo-lable--wrapper">
+                                    <p class="prise__item-sup--promo-lable--text">
+                                        ההנחה שלך התקבלה בהצלחה
+                                    </p>
+                                    <p class="prise__item-sup--promo-lable--text">
+                                        אין לעזוב עמוד זה על מנת לא לאבד אותה
+                                    </p>
+                                </div>
+                                <img src="img/lable.svg" alt="lable">
+                            </div>
+                            <div class="prise__item-sup--select">
+                                <div class="prise__item-sup--select-product">
+                                    <h3 class="prise__item-sup--select-product--title title">
+                                        כמות
+                                    </h3>
+                                    <label class="prise__item-sup--select-product--lable">
+                                        <input class="prise__item-sup--select-product--checkbox" type="radio"
+                                            name="price" checked>
+                                        <span class="prise__item-sup--select-product--lable-fake"></span>
+                                        <span class="prise__item-sup--select-product--lable-text">Wonder Brush X
+                                            1</span>
                                     </label>
-                                    <label class="price__item-sup--additionally-alternative-select--lable">
-                                        <input class="price__item-sup--additionally-alternative-select--lable-checkbox"
-                                            type="checkbox" name="alternative">
-                                        <span class="price__item-sup--additionally-alternative-select--fake"></span>
-                                        <span class="price__item-sup--additionally-alternative-select--text">אחריות
-                                            לשנה</span>
+                                    <label class="prise__item-sup--select-product--lable">
+                                        <input class="prise__item-sup--select-product--checkbox" type="radio"
+                                            name="price">
+                                        <span class="prise__item-sup--select-product--lable-fake"></span>
+                                        <span class="prise__item-sup--select-product--lable-text stiker">Wonder Brush X
+                                            2</span>
+                                    </label>
+                                    <label class="prise__item-sup--select-product--lable">
+                                        <input class="prise__item-sup--select-product--checkbox" type="radio"
+                                            name="price">
+                                        <span class="prise__item-sup--select-product--lable-fake"></span>
+                                        <span class="prise__item-sup--select-product--lable-text">Wonder Brush X
+                                            3</span>
                                     </label>
                                 </div>
-                                <div class="price__item-sup--additionally-alternative-price">
-                                    <p class="price__item-sup--additionally-alternative-price--numb"><bdo dir="ltr">₪ 39
+                                <div class="prise__item-sup--select-price">
+                                    <h3 class="prise__item-sup--select-price--name">
+                                        מחיר
+                                    </h3>
+                                    <p class="prise__item-sup--select-price--text">199 ₪ (199 ₪/ליחידה)</p>
+                                    <p class="prise__item-sup--select-price--text">318 ₪ (159 ₪/ליחידה)</p>
+                                    <p class="prise__item-sup--select-price--text">417 ₪ (139 ₪/ליחידה)</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="price__item-sup--wrapper">
+                            <div class="price__item-sup--additionally">
+                                <h3 class="price__item-sup--additionally-promo-title title">
+                                    שפרי את הזמנתך באמצעות:
+                                </h3>
+                                <div class="price__item-sup--additionally-alternative">
+                                    <div class="price__item-sup--additionally-alternative-select">
+                                        <label class="price__item-sup--additionally-alternative-select--lable">
+                                            <input
+                                                class="price__item-sup--additionally-alternative-select--lable-checkbox"
+                                                type="checkbox" name="alternative" checked>
+                                            <span class="price__item-sup--additionally-alternative-select--fake"></span>
+                                            <span class="price__item-sup--additionally-alternative-select--text">אחריות
+                                                לשנתיים</span>
+                                        </label>
+                                        <label class="price__item-sup--additionally-alternative-select--lable">
+                                            <input
+                                                class="price__item-sup--additionally-alternative-select--lable-checkbox"
+                                                type="checkbox" name="alternative">
+                                            <span class="price__item-sup--additionally-alternative-select--fake"></span>
+                                            <span class="price__item-sup--additionally-alternative-select--text">אחריות
+                                                לשנה</span>
+                                        </label>
+                                    </div>
+                                    <div class="price__item-sup--additionally-alternative-price">
+                                        <p class="price__item-sup--additionally-alternative-price--numb"><bdo
+                                                dir="ltr">₪ 39
+                                        </p>
+                                        <p class="price__item-sup--additionally-alternative-price--numb"><bdo
+                                                dir="ltr">₪ 25
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price__item-sup--additionally-insurance">
+                                <div class="price__item-sup--additionally-insurance--product">
+                                    <h3 class="price__item-sup--additionally--insurance-promo-title title">
+                                        סיכום הזמנה
+                                    </h3>
+                                    <p class="price__item-sup--additionally-insurance--text">Wonder Brush X 1</p>
+                                    <p class="price__item-sup--additionally-insurance--text">אחריות לשנתיים</p>
+                                    <p class="price__item-sup--additionally-insurance--text">דמי משלוח</p>
+                                </div>
+                                <div class="price__item-sup--additionally-insurance--price">
+                                    <h3 class="price__item-sup--additionally--insurance-price-title title">
+                                        מחיר
+                                    </h3>
+                                    <p class="price__item-sup--additionally-insurance--price-numb"><bdo dir="ltr">₪ 199
                                     </p>
-                                    <p class="price__item-sup--additionally-alternative-price--numb"><bdo dir="ltr">₪ 25
+                                    <p class="price__item-sup--additionally-insurance--price-numb"><bdo dir="ltr">₪ 39
+                                    </p>
+                                    <p class="price__item-sup--additionally-insurance--price-numb"><bdo dir="ltr">₪ 0
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="price__item-sup--additionally-insurance">
-                            <div class="price__item-sup--additionally-insurance--product">
-                                <h3 class="price__item-sup--additionally--insurance-promo-title title">
-                                    סיכום הזמנה
-                                </h3>
-                                <p class="price__item-sup--additionally-insurance--text">Wonder Brush X 1</p>
-                                <p class="price__item-sup--additionally-insurance--text">אחריות לשנתיים</p>
-                                <p class="price__item-sup--additionally-insurance--text">דמי משלוח</p>
+                    </div>
+                    <h3 class="price__item-contact--title title">2 . לאן לשלוח?</h3>
+                    <div class="price__item-contact">
+                        <div class="price__item-contact--form">
+                            <div class="price__item-contact--form-wrapper">
+                                <input class="price__item-contact--form-wrapper--input" placeholder="שם פרטי ומשפחה"
+                                    name="name" type="name" required>
+                                <input class="price__item-contact--form-wrapper--input" placeholder="דואר אלקטרוני"
+                                    name="email" type="email" required>
+                                <input id="phone" class="price__item-contact--form-wrapper--input"
+                                    placeholder="מספר טלפון" name="phone" minlength="10" maxlength="10" type="tel"
+                                    required>
+                                <input class="price__item-contact--form-wrapper--input" placeholder="רחוב" name="street"
+                                    type="text" required>
                             </div>
-                            <div class="price__item-sup--additionally-insurance--price">
-                                <h3 class="price__item-sup--additionally--insurance-price-title title">
-                                    מחיר
-                                </h3>
-                                <p class="price__item-sup--additionally-insurance--price-numb"><bdo dir="ltr">₪ 199</p>
-                                <p class="price__item-sup--additionally-insurance--price-numb"><bdo dir="ltr">₪ 39</p>
-                                <p class="price__item-sup--additionally-insurance--price-numb"><bdo dir="ltr">₪ 0</p>
+                            <div class="price__item-contact--form-inner">
+                                <input class="price__item-contact--form-inner--input" placeholder="דירה/ מס׳ בית"
+                                    name="room" type="text" required>
+                                <input class="price__item-contact--form-inner--input" placeholder="מיקוד" name="index"
+                                    type="number" required>
+                                <input class="price__item-contact--form-inner--input" placeholder="עיר" name="city"
+                                    type="text" required>
+                            </div>
+                        </div>
+                        <div class="price__item-contact--label">
+                            <div class="price__item-contact--label-name">
+                                <p class="price__item-contact--label-name--text">מחיר מקורי:</p>
+                                <p class="price__item-contact--label-name--text">החנה</p>
+                                <p class="price__item-contact--label-name--text">סכום סופי:</p>
+                            </div>
+                            <div class="price__item-contact--label-price">
+                                <p class="price__item-contact--label-price--text"><bdo dir="ltr">₪ 399</p>
+                                <p class="price__item-contact--label-price--text"><bdo dir="ltr">₪ -195</p>
+                                <p class="price__item-contact--label-price--text"><bdo dir="ltr">₪ 238</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="price__item-pay__title title">3 . כיצד תרצי לשלם?</h3>
+                    <div id="top__btn" class="price__item-pay">
+                        <div class="price__item-pay--wrapper">
+                            <input id="card" class="price__item-pay--input cards" placeholder=" מספר כרטיס אשרא"
+                                name="card" autocomplete="off" type="text" required>
+                            <input id="date" class="price__item-pay--input calendar" placeholder="חודש/שנה" name="date"
+                                type="text" required>
+                            <input id="cvv" class="price__item-pay--input cvv__code" placeholder="קוד אימות (CVV)"
+                                name="cvv" type="text" required>
+                        </div>
+                        <button id="btn" class="price__item-pay--btn top__btn" type="submit">לשלם בכרטיס אשראי
+                        </button>
+                        <div class="price__item-pay--services">
+                            <div class="price__item-pay--services-secured">
+                                <img class="price__item-pay--services-secured--img" src="img/secured.svg" alt="secured">
+                            </div>
+                            <div class="price__item-pay--services-wrapper">
+                                <div class="price__item-pay--services-img">
+                                    <img class="price__item-pay--services-img--img" src="img/visa.svg" alt="visa">
+                                </div>
+                                <div class="price__item-pay--services-img">
+                                    <img class="price__item-pay--services-img--img" src="img/mastercard.svg"
+                                        alt="mastercard">
+                                </div>
+                                <div class="price__item-pay--services-img">
+                                    <img class="price__item-pay--services-img--img" src="img/paypal.svg" alt="paypal">
+                                </div>
+                                <div class="price__item-pay--services-img">
+                                    <img class="price__item-pay--services-img--img" src="img/american_express.svg"
+                                        alt="american_express">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h3 class="price__item-contact--title title">2 . לאן לשלוח?</h3>
-                <div class="price__item-contact">
-                    <div class="price__item-contact--form">
-                        <div class="price__item-contact--form-wrapper">
-                            <input class="price__item-contact--form-wrapper--input" placeholder="שם פרטי ומשפחה"
-                                type="text">
-                            <input class="price__item-contact--form-wrapper--input" placeholder="דואר אלקטרוני"
-                                type="text">
-                            <input class="price__item-contact--form-wrapper--input" placeholder="מספר טלפון"
-                                type="text">
-                            <input class="price__item-contact--form-wrapper--input" placeholder="רחוב" type="text">
-                        </div>
-                        <div class="price__item-contact--form-inner">
-                            <input class="price__item-contact--form-inner--input" placeholder="דירה/ מס׳ בית"
-                                type="text">
-                            <input class="price__item-contact--form-inner--input" placeholder="מיקוד" type="text">
-                            <input class="price__item-contact--form-inner--input" placeholder="עיר" type="text">
-                        </div>
-                    </div>
-                    <div class="price__item-contact--label">
-                        <div class="price__item-contact--label-name">
-                            <p class="price__item-contact--label-name--text">מחיר מקורי:</p>
-                            <p class="price__item-contact--label-name--text">החנה</p>
-                            <p class="price__item-contact--label-name--text">סכום סופי:</p>
-                        </div>
-                        <div class="price__item-contact--label-price">
-                            <p class="price__item-contact--label-price--text"><bdo dir="ltr">₪ 399</p>
-                            <p class="price__item-contact--label-price--text"><bdo dir="ltr">₪ -195</p>
-                            <p class="price__item-contact--label-price--text"><bdo dir="ltr">₪ 238</p>
-                        </div>
-                    </div>
-                </div>
-                <h3 class="price__item-pay__title title">3 . כיצד תרצי לשלם?</h3>
-                <div class="price__item-pay">
-                    <div class="price__item-pay--wrapper">
-                        <input class="price__item-pay--input cards" placeholder=" מספר כרטיס אשרא" type="text">
-                        <input class="price__item-pay--input calendar" placeholder="חודש/שנה" type="text">
-                        <input class="price__item-pay--input cvv__code" placeholder="קוד אימות (CVV)" type="text">
-                    </div>
-                    <button id="btn" class="price__item-pay--btn top__btn" type="submit">לשלם בכרטיס אשראי
-                    </button>
-                    <div class="price__item-pay--services">
-                        <div class="price__item-pay--services-secured">
-                            <img class="price__item-pay--services-secured--img" src="img/secured.svg" alt="secured">
-                        </div>
-                        <div class="price__item-pay--services-wrapper">
-                            <div class="price__item-pay--services-img">
-                                <img class="price__item-pay--services-img--img" src="img/visa.svg" alt="visa">
-                            </div>
-                            <div class="price__item-pay--services-img">
-                                <img class="price__item-pay--services-img--img" src="img/mastercard.svg"
-                                    alt="mastercard">
-                            </div>
-                            <div class="price__item-pay--services-img">
-                                <img class="price__item-pay--services-img--img" src="img/paypal.svg" alt="paypal">
-                            </div>
-                            <div class="price__item-pay--services-img">
-                                <img class="price__item-pay--services-img--img" src="img/american_express.svg"
-                                    alt="american_express">
-                            </div>
-                        </div>
-                    </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="advertising">
+        <div class="container">
+            <div class="advertising__content">
+                <img class="advertising__content-img" src="img/dangers.svg" alt="dangers">
+                <h3 class="advertising__content-title">
+                    נותרו 12 יחידות בלבד
+                </h3>
+            </div>
+            <div class="advertising__text">
+                <img class="advertising__text-img" src="img/eye.svg" alt="eye">
+                <p class="advertising__text-content">
+                    57 אנשים צופים במוצר ברגע זה
+                </p>
+            </div>
+            <div class="advertising__user">
+
+                <div class="advertising__user-img">
+                    <img class="advertising__user-img--img" src="img/user.jpg" alt="user">
+                    <p class="advertising__user-text"> תורזחהו םיחולשמ</p>
                 </div>
             </div>
         </div>
     </section>
 
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

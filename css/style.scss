@@ -57,7 +57,6 @@ body{
     text-align: center;
 
     &__logo{
-        display: block;
         margin-top: 43px;
     }
 }
@@ -77,6 +76,11 @@ body{
         position: absolute;
         top: 100px;
         z-index: -1;
+    }
+
+    &__img{
+        max-width: 530px;
+        max-height: 570px;
     }
 
     &__wrapper{
@@ -134,6 +138,7 @@ body{
             @extend %rubik-bold;
             font-size: 40px;
             line-height: 86px;
+            max-width: 635px
         }
 
         &-numb{
@@ -143,6 +148,7 @@ body{
             color: #99C647;
             margin-left: 10px;
             margin-right: 10px;
+            white-space: nowrap;
         }
     }
 
@@ -586,7 +592,7 @@ body{
         border-radius: 10px;
         width: 425px;
         height: 48px;
-        padding: 10px 40px 10px 15px;
+        padding: 10px 60px 10px 15px;
         outline: none;
 
         &:nth-child(2){
@@ -605,17 +611,9 @@ body{
         border: none;
         margin: 0 auto;
         display: block;
-        position: relative;
-
-        &::before{
-            content: "";
-            position: absolute;
-            background: url(../img/card-white.svg) no-repeat;
-            width: 45px;
-            height: 30px;
-            right: 32%;
-            fill: #FCFCFC;
-        }
+        background-image: url(../img/card-white.svg);
+        background-repeat: no-repeat;
+        background-position: 67% 50%;
     }
 
     &--services{
@@ -641,31 +639,85 @@ body{
     }
 }
 
-// .cvv__code,
-// .calendar,
-// .cards{
-//     position: relative;
+.cvv__code{
+    background: url(../img/cvv-icon.svg) no-repeat;
+    background-position: 97% 50%;
+}
 
-//     &::before{
-//         content: "";
-//         position: absolute;
-//         width: 50px;
-//         height: 50px;
-//     }
-// }
+.calendar{
+    background: url(../img/calendar-icon.svg) no-repeat;
+    background-position: 94% 50%;
+}
 
-// .cvv__code::before{
-//     background: url(../img/cvv-icon.svg);
-// }
-
-// .calendar::before{
-//     background: url(../img/calendar-icon.svg);
-// }
-
-// .cards::before{
-//     background: url(../img/calendar-icon.svg);
-// }
+.cards{
+    background: url(../img/card.svg) no-repeat 40px/32px;
+    background-position: 95% 50%;
+}
 
 // === / price__item-pay ===
 
 // === / PRICE ===
+
+// === ADVERTISING ===
+
+.advertising{
+    margin-bottom: 82px;
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FEFCDC;
+        border: 1px solid #D3D3D3;
+        border-radius: 10px;
+        width: 870px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+
+        &-title{
+            color: #D63422;
+            line-height: 56px;
+            font-size: 34px;
+            @extend %rubik-bold;
+            margin-right: 20px;
+        }
+    }
+
+    &__text{
+        display: flex;
+        justify-content: center;
+
+        &-content{
+            color: #291247;
+            font-size: 28px;
+            line-height: 45px;
+            margin-right: 16px;
+        }
+    }
+
+    &__user{
+
+
+        &-img{
+            width: 315px;
+            height: 294px;
+            margin-right: 191px;
+            object-fit: cover;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &-text{
+            display: inline-block;
+            position: absolute;
+            right: -330px;
+            bottom: 44px;
+            color: #291247;
+            line-height: 45px;
+            font-size: 28px;
+        }
+    }
+
+}
+
+// === / ADVERTISING ===
