@@ -339,6 +339,9 @@ h2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+button {
+  cursor: pointer; }
+
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400; }
@@ -718,7 +721,7 @@ body {
       .price__item-contact--form-wrapper--input:last-child {
         margin-bottom: 0; }
     .price__item-contact--form-inner--input {
-      max-width: 327px;
+      width: 327px;
       height: 48px;
       background: #FFF;
       border: 1px solid #D3D3D3;
@@ -762,8 +765,88 @@ body {
     .price__item-contact--label-name--text, .price__item-contact--label-price--text {
       color: #291247;
       font-size: 34px;
-      line-height: 115px;
+      line-height: 100px;
       text-align: right;
       margin: 0; }
       .price__item-contact--label-name--text:nth-child(2), .price__item-contact--label-price--text:nth-child(2) {
         color: #D63422; }
+
+.price__item-pay__title {
+  position: relative;
+  padding-right: 65px;
+  margin: 33px 0 53px; }
+  .price__item-pay__title::before {
+    content: "";
+    background: url(../img/card.svg) no-repeat;
+    width: 44px;
+    height: 30px;
+    right: 0;
+    top: 15px;
+    position: absolute; }
+
+.price__item-pay {
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+  background: #FCFCFC;
+  width: 100%;
+  padding: 38px 90px; }
+  .price__item-pay--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px; }
+  .price__item-pay--input {
+    background: #FFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    width: 425px;
+    height: 48px;
+    padding: 10px 40px 10px 15px;
+    outline: none; }
+    .price__item-pay--input:nth-child(2) {
+      width: 325px; }
+    .price__item-pay--input::-webkit-input-placeholder {
+      color: #291247; }
+    .price__item-pay--input:-ms-input-placeholder {
+      color: #291247; }
+    .price__item-pay--input::-ms-input-placeholder {
+      color: #291247; }
+    .price__item-pay--input::placeholder {
+      color: #291247; }
+  .price__item-pay--btn {
+    height: 56px;
+    color: #FFF;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    position: relative; }
+    .price__item-pay--btn::before {
+      content: "";
+      position: absolute;
+      background: url(../img/card-white.svg) no-repeat;
+      width: 45px;
+      height: 30px;
+      right: 32%;
+      fill: #FCFCFC; }
+  .price__item-pay--services-secured {
+    text-align: center;
+    margin: 37px 0; }
+  .price__item-pay--services-img {
+    margin-right: 33px; }
+    .price__item-pay--services-img:last-child {
+      margin-right: 0px; }
+  .price__item-pay--services-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }

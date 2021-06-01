@@ -487,7 +487,7 @@ body{
         &-inner{
 
             &--input{
-                max-width: 327px;
+                width: 327px;
                 height: 48px;
                 background: #FFF;
                 border: 1px solid #D3D3D3;
@@ -536,7 +536,7 @@ body{
             color: #291247;
             @extend %rubik-bold;
             font-size: 34px;
-            line-height: 115px;
+            line-height: 100px;
             text-align: right;
             margin: 0;
 
@@ -548,5 +548,124 @@ body{
 }
 
 // === / price__item-contact ===
+
+// === price__item-pay ===
+
+.price__item-pay__title{
+    position: relative;
+    padding-right: 65px;
+    margin: 33px 0 53px;
+
+    &::before{
+        content: "";
+        background: url(../img/card.svg) no-repeat;
+        width: 44px;
+        height: 30px;
+        right: 0;
+        top: 15px;
+        position: absolute;
+    }
+}
+
+.price__item-pay{
+    border-radius: 10px;
+    border: 1px solid #D3D3D3;
+    background: #FCFCFC;
+    width: 100%;
+    padding: 38px 90px;
+
+    &--wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &--input{
+        background: #FFF;
+        border: 1px solid #D3D3D3;
+        border-radius: 10px;
+        width: 425px;
+        height: 48px;
+        padding: 10px 40px 10px 15px;
+        outline: none;
+
+        &:nth-child(2){
+            width: 325px;
+        }
+
+        &::placeholder{
+            color: #291247;
+        }
+    }
+
+    &--btn{
+        height: 56px;
+        color: #FFF;
+        outline: none;
+        border: none;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            background: url(../img/card-white.svg) no-repeat;
+            width: 45px;
+            height: 30px;
+            right: 32%;
+            fill: #FCFCFC;
+        }
+    }
+
+    &--services{
+
+        &-secured{
+            text-align: center;
+            margin: 37px 0;
+        }
+
+        &-img{
+            margin-right: 33px;
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+
+        &-wrapper{
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+// .cvv__code,
+// .calendar,
+// .cards{
+//     position: relative;
+
+//     &::before{
+//         content: "";
+//         position: absolute;
+//         width: 50px;
+//         height: 50px;
+//     }
+// }
+
+// .cvv__code::before{
+//     background: url(../img/cvv-icon.svg);
+// }
+
+// .calendar::before{
+//     background: url(../img/calendar-icon.svg);
+// }
+
+// .cards::before{
+//     background: url(../img/calendar-icon.svg);
+// }
+
+// === / price__item-pay ===
 
 // === / PRICE ===
