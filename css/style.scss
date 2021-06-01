@@ -3,11 +3,6 @@
 
 // == VAR ==
 
-%rubik-light{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-}
-
 %rubik-regular{
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -721,3 +716,121 @@ body{
 }
 
 // === / ADVERTISING ===
+
+// === FOOTER ===
+
+ul.footer__menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 53px;
+}
+
+ul.footer__menu li.footer__menu-item a{
+    color: #291247;
+    font-size: 28px;
+    display: inline-block;
+    padding: 5px 10px;
+
+    &:hover{
+        color: #391568;
+        transform: all .5s;
+    }
+}
+
+.footer__copy-text{
+    margin-bottom: 47px;
+    color: #291247;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.footer__copy{
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+// === / FOOTER ===
+
+
+	.timer{
+		font-size: 0;
+		text-align: center;
+	}
+	.timer_section{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.timer_section > div{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 50px;
+		background: #4dadf7;
+		color: #ffffff;
+		line-height: 70px;
+		width: 55px;
+		margin: 0 1px;
+		border-radius: 2px;
+	}
+	.timer_section > div.timer_section_desc{
+		display: block;
+		background: none;
+		color: inherit;
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 30px;
+		width: auto;
+		margin: 0;
+	}
+	.timer_delimetr{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 50px;
+		line-height: 70px;
+		margin: 0 5px;
+	}
+	@media (max-width: 767px){
+		.timer_section > div{
+			font-size: 30px;
+			width: 30px;
+			line-height: 40px;
+		}
+		.timer_delimetr{
+			line-height: 40px;
+			font-size: 30px;
+		}
+		.timer_section > div.timer_section_desc{
+			font-size: 14px;
+			line-height: 26px;
+		}
+	}
+
+    .countdown{
+        background: #D63422;
+        color: #FFF;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 36px 0;
+
+        &__wrapper{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin-right: 10px;
+            line-height: 46px;
+            font-size: 28px;
+            @extend %rubik-medium;
+        }
+
+        &__text{
+            margin: 0;
+            line-height: 46px;
+            font-size: 28px;
+            @extend %rubik-medium;
+        }
+
+        &__text span{
+            display: block;
+        }
+    }
