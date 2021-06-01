@@ -347,7 +347,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 500; }
 
-.title, .sales__text-content, .sales__text-numb, .sales__title-2, .prise__item-sup--promo-lable, .prise__item-sup--select-price--name {
+.title, .sales__text-content, .sales__text-numb, .sales__title-2, .prise__item-sup--promo-lable, .prise__item-sup--select-price--name, .price__item-contact--label-name--text, .price__item-contact--label-price--text {
   font-family: 'Rubik', sans-serif;
   font-weight: 700; }
 
@@ -535,7 +535,7 @@ body {
         .prise__item-sup--select-product--lable-text {
           color: #291247;
           font-size: 34px;
-          line-height: 90px; }
+          line-height: 115px; }
       .prise__item-sup--select-product--checkbox {
         display: none; }
       .prise__item-sup--select-product--checkbox:checked + .prise__item-sup--select-product--lable-fake::before {
@@ -570,9 +570,18 @@ body {
         margin: 0; }
       .prise__item-sup--select-price--text {
         color: #291247;
-        line-height: 90px;
+        line-height: 115px;
         font-size: 34px;
         margin: 0; }
+    .prise__item-sup .stiker {
+      position: relative; }
+    .prise__item-sup .stiker::before {
+      content: "";
+      position: absolute;
+      background: url(../img/stiker.svg) no-repeat;
+      width: 214px;
+      height: 64px;
+      bottom: 40px; }
     .prise__item-sup .price__item-sup--additionally-alternative {
       width: 688px;
       min-height: 194px;
@@ -635,15 +644,15 @@ body {
       border-radius: 10px;
       margin-top: 43px;
       padding: 36px;
-      height: 404px; }
+      height: 100%; }
       .prise__item-sup .price__item-sup--additionally-insurance--text {
-        line-height: 90px;
+        line-height: 115px;
         font-size: 34px;
         margin: 0; }
     .prise__item-sup .price__item-sup--additionally-insurance--price {
       margin-right: 75px; }
       .prise__item-sup .price__item-sup--additionally-insurance--price-numb {
-        line-height: 90px;
+        line-height: 115px;
         font-size: 34px;
         margin: 0; }
     .prise__item-sup .price__item-sup--additionally-promo-title {
@@ -658,3 +667,103 @@ body {
       right: 0;
       top: 10px;
       position: absolute; }
+
+.price__item-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .price__item-contact--title {
+    position: relative;
+    padding-right: 67px;
+    margin: 18px 0px 35px; }
+    .price__item-contact--title::before {
+      content: "";
+      position: absolute;
+      width: 45px;
+      height: 30px;
+      right: 0;
+      top: 17px;
+      background: url(../img/truck.svg) no-repeat; }
+  .price__item-contact--form {
+    width: 870px;
+    background-color: #FCFCFC;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 36px; }
+    .price__item-contact--form-wrapper--input {
+      max-width: 327px;
+      height: 48px;
+      background: #FFF;
+      border: 1px solid #D3D3D3;
+      border-radius: 10px;
+      padding: 10px 15px;
+      outline: none;
+      margin-bottom: 34px; }
+      .price__item-contact--form-wrapper--input::-webkit-input-placeholder {
+        color: #291247; }
+      .price__item-contact--form-wrapper--input:-ms-input-placeholder {
+        color: #291247; }
+      .price__item-contact--form-wrapper--input::-ms-input-placeholder {
+        color: #291247; }
+      .price__item-contact--form-wrapper--input::placeholder {
+        color: #291247; }
+      .price__item-contact--form-wrapper--input:last-child {
+        margin-bottom: 0; }
+    .price__item-contact--form-inner--input {
+      max-width: 327px;
+      height: 48px;
+      background: #FFF;
+      border: 1px solid #D3D3D3;
+      border-radius: 10px;
+      padding: 10px 15px;
+      outline: none;
+      margin-bottom: 34px; }
+      .price__item-contact--form-inner--input::-webkit-input-placeholder {
+        color: #291247; }
+      .price__item-contact--form-inner--input:-ms-input-placeholder {
+        color: #291247; }
+      .price__item-contact--form-inner--input::-ms-input-placeholder {
+        color: #291247; }
+      .price__item-contact--form-inner--input::placeholder {
+        color: #291247; }
+      .price__item-contact--form-inner--input:last-child {
+        margin-bottom: 0; }
+  .price__item-contact--label {
+    background: #FEFCDC;
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    width: 688px;
+    padding: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    .price__item-contact--label::before {
+      content: "";
+      position: absolute;
+      width: 165px;
+      height: 180px;
+      right: 15px;
+      top: -25px;
+      background: url(../img/lable.svg) no-repeat; }
+    .price__item-contact--label-price {
+      margin-right: 30px; }
+    .price__item-contact--label-name--text, .price__item-contact--label-price--text {
+      color: #291247;
+      font-size: 34px;
+      line-height: 115px;
+      text-align: right;
+      margin: 0; }
+      .price__item-contact--label-name--text:nth-child(2), .price__item-contact--label-price--text:nth-child(2) {
+        color: #D63422; }
