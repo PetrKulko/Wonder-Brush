@@ -1670,7 +1670,10 @@ ul.footer__menu li.footer__menu-item a {
     top: 13px; }
 
   .prise__item-sup .prise__item-sup--promo-lable--img {
-    width: 80px; } }
+    width: 80px; }
+
+  .countdown__wrapper {
+    margin-right: 0; } }
 @media (max-width: 500px) {
   .sales__title-1,
   .sales__title-3 {
