@@ -917,6 +917,7 @@ body {
             flex-direction: row-reverse; }
 
 .cvv__code {
+  direction: ltr;
   background: url(../img/cvv-icon.svg) no-repeat;
   background-position: 97% 50%;
   position: relative; }
@@ -938,6 +939,7 @@ body {
     top: 6px; }
 
 .calendar {
+  direction: ltr;
   background: url(../img/calendar-icon.svg) no-repeat;
   background-position: 94% 50%;
   position: relative; }

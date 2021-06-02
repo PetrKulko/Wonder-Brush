@@ -700,6 +700,7 @@ body{
 }
 
 .cvv__code{
+    direction: ltr;
     background: url(../img/cvv-icon.svg) no-repeat;
     background-position: 97% 50%;
     position: relative;
@@ -712,6 +713,7 @@ body{
 }
 
 .calendar{
+    direction: ltr;
     background: url(../img/calendar-icon.svg) no-repeat;
     background-position: 94% 50%;
     position: relative;
