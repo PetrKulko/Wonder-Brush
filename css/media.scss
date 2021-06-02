@@ -905,13 +905,14 @@
     }
     ul.footer__menu li.footer__menu-item a {
         font-size: 14px;
-        padding: 5px 42px 15px 10px;
+        padding: 5px 50px 15px 10px;
     }
     ul.footer__menu {
         flex-direction: inherit;
         flex-wrap: wrap;
         margin-bottom: 0;
         margin-top: 8px;
+        justify-content: center;
     }
     .footer__menu-item {
         width: auto;
