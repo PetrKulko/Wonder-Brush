@@ -96,9 +96,19 @@ body{
     }
 
     &__items li.top__item{
-        list-style: url('../img/like.svg');
         padding-right: 20px;
         line-height: 60px;
+        position: relative;
+
+        &::before{
+            content: "";
+            background-image: url('../img/like.svg');
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            right: -30px;
+            top: -7px;
+        }
     }
 
     &__btn{
