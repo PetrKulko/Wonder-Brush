@@ -754,7 +754,8 @@ body {
       outline: none;
       margin-bottom: 34px;
       position: relative;
-      font-weight: 500; }
+      font-weight: 500;
+      direction: rtl; }
       .price__item-contact--form-wrapper--input::-webkit-input-placeholder {
         color: #291247;
         position: absolute;
@@ -783,7 +784,8 @@ body {
       outline: none;
       margin-bottom: 34px;
       position: relative;
-      font-weight: 500; }
+      font-weight: 500;
+      direction: rtl; }
       .price__item-contact--form-inner--input::-webkit-input-placeholder {
         color: #291247;
         position: absolute;
@@ -917,7 +919,7 @@ body {
             flex-direction: row-reverse; }
 
 .cvv__code {
-  direction: ltr;
+  direction: rtl;
   background: url(../img/cvv-icon.svg) no-repeat;
   background-position: 97% 50%;
   position: relative; }
@@ -939,7 +941,7 @@ body {
     top: 6px; }
 
 .calendar {
-  direction: ltr;
+  direction: rtl;
   background: url(../img/calendar-icon.svg) no-repeat;
   background-position: 94% 50%;
   position: relative; }
@@ -961,6 +963,7 @@ body {
     top: 6px; }
 
 .cards {
+  direction: rtl;
   background: url(../img/card.svg) no-repeat 40px/32px;
   background-position: 95% 50%;
   position: relative; }

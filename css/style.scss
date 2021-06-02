@@ -522,6 +522,7 @@ body{
                 margin-bottom: 34px;
                 position: relative;
                 font-weight: 500;
+                direction: rtl;
 
                 &::placeholder{
                     color: #291247;
@@ -548,6 +549,7 @@ body{
                 margin-bottom: 34px;
                 position: relative;
                 font-weight: 500;
+                direction: rtl;
 
                 &::placeholder{
                     color: #291247;
@@ -700,7 +702,7 @@ body{
 }
 
 .cvv__code{
-    direction: ltr;
+    direction: rtl;
     background: url(../img/cvv-icon.svg) no-repeat;
     background-position: 97% 50%;
     position: relative;
@@ -713,7 +715,7 @@ body{
 }
 
 .calendar{
-    direction: ltr;
+    direction: rtl;
     background: url(../img/calendar-icon.svg) no-repeat;
     background-position: 94% 50%;
     position: relative;
@@ -726,6 +728,7 @@ body{
 }
 
 .cards{
+    direction: rtl;
     background: url(../img/card.svg) no-repeat 40px/32px;
     background-position: 95% 50%;
     position: relative;
