@@ -33,7 +33,7 @@ body{
 .container{
     max-width: 1600px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 .title{
@@ -509,9 +509,12 @@ body{
                 padding: 10px 15px;
                 outline: none;
                 margin-bottom: 34px;
+                position: relative;
 
                 &::placeholder{
                     color: #291247;
+                    position: absolute;
+                    right: 15px;
                 }
 
                 &:last-child{
@@ -531,9 +534,12 @@ body{
                 padding: 10px 15px;
                 outline: none;
                 margin-bottom: 34px;
+                position: relative;
 
                 &::placeholder{
                     color: #291247;
+                    position: absolute;
+                    right: 15px;
                 }
 
                 &:last-child{
@@ -675,16 +681,37 @@ body{
 .cvv__code{
     background: url(../img/cvv-icon.svg) no-repeat;
     background-position: 97% 50%;
+    position: relative;
+
+    &::placeholder{
+        position: absolute;
+        right: 55px;
+        top: 6px;
+    }
 }
 
 .calendar{
     background: url(../img/calendar-icon.svg) no-repeat;
     background-position: 94% 50%;
+    position: relative;
+
+    &::placeholder{
+        position: absolute;
+        right: 55px;
+        top: 6px;
+    }
 }
 
 .cards{
     background: url(../img/card.svg) no-repeat 40px/32px;
     background-position: 95% 50%;
+    position: relative;
+
+    &::placeholder{
+        position: absolute;
+        right: 60px;
+        top: 6px;
+    }
 }
 
 // === / price__item-pay ===
@@ -880,6 +907,7 @@ ul.footer__menu li.footer__menu-item a{
 
         &__text span{
             display: block;
+            padding-right: 120px
         }
     }
 

@@ -370,7 +370,7 @@ body {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 15px; }
+  padding: 0 5px; }
 
 .title {
   color: #291247;
@@ -738,15 +738,24 @@ body {
       border-radius: 10px;
       padding: 10px 15px;
       outline: none;
-      margin-bottom: 34px; }
+      margin-bottom: 34px;
+      position: relative; }
       .price__item-contact--form-wrapper--input::-webkit-input-placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-wrapper--input:-ms-input-placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-wrapper--input::-ms-input-placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-wrapper--input::placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-wrapper--input:last-child {
         margin-bottom: 0; }
     .price__item-contact--form-inner--input {
@@ -757,15 +766,24 @@ body {
       border-radius: 10px;
       padding: 10px 15px;
       outline: none;
-      margin-bottom: 34px; }
+      margin-bottom: 34px;
+      position: relative; }
       .price__item-contact--form-inner--input::-webkit-input-placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-inner--input:-ms-input-placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-inner--input::-ms-input-placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-inner--input::placeholder {
-        color: #291247; }
+        color: #291247;
+        position: absolute;
+        right: 15px; }
       .price__item-contact--form-inner--input:last-child {
         margin-bottom: 0; }
   .price__item-contact--label {
@@ -880,15 +898,66 @@ body {
 
 .cvv__code {
   background: url(../img/cvv-icon.svg) no-repeat;
-  background-position: 97% 50%; }
+  background-position: 97% 50%;
+  position: relative; }
+  .cvv__code::-webkit-input-placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
+  .cvv__code:-ms-input-placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
+  .cvv__code::-ms-input-placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
+  .cvv__code::placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
 
 .calendar {
   background: url(../img/calendar-icon.svg) no-repeat;
-  background-position: 94% 50%; }
+  background-position: 94% 50%;
+  position: relative; }
+  .calendar::-webkit-input-placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
+  .calendar:-ms-input-placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
+  .calendar::-ms-input-placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
+  .calendar::placeholder {
+    position: absolute;
+    right: 55px;
+    top: 6px; }
 
 .cards {
   background: url(../img/card.svg) no-repeat 40px/32px;
-  background-position: 95% 50%; }
+  background-position: 95% 50%;
+  position: relative; }
+  .cards::-webkit-input-placeholder {
+    position: absolute;
+    right: 60px;
+    top: 6px; }
+  .cards:-ms-input-placeholder {
+    position: absolute;
+    right: 60px;
+    top: 6px; }
+  .cards::-ms-input-placeholder {
+    position: absolute;
+    right: 60px;
+    top: 6px; }
+  .cards::placeholder {
+    position: absolute;
+    right: 60px;
+    top: 6px; }
 
 .advertising {
   margin-bottom: 82px; }
@@ -1060,7 +1129,8 @@ ul.footer__menu li.footer__menu-item a {
     line-height: 46px;
     font-size: 28px; }
   .countdown__text span {
-    display: block; }
+    display: block;
+    padding-right: 120px; }
 
 @media (max-width: 1450px) {
   .top__items li.top__item {
@@ -1266,10 +1336,7 @@ ul.footer__menu li.footer__menu-item a {
     width: 100%; }
 
   .price__item-pay--btn {
-    background-position: 69% 50%; }
-
-  .advertising__user-text {
-    position: static; } }
+    background-position: 69% 50%; } }
 @media (max-width: 800px) {
   .header__logo {
     margin-top: 25px; }
@@ -1342,9 +1409,6 @@ ul.footer__menu li.footer__menu-item a {
   .price__item-contact--form-wrapper {
     margin-bottom: 35px; }
 
-  .advertising__user-text {
-    display: none; }
-
   .advertising__content {
     margin-bottom: 0px; }
 
@@ -1362,7 +1426,35 @@ ul.footer__menu li.footer__menu-item a {
     width: 100%; }
 
   .footer__menu {
-    padding-right: 0; } }
+    padding-right: 0; }
+
+  .prise__item-sup--promo-title::before {
+    right: 10px;
+    top: 13px;
+    background-size: 30px; }
+
+  .prise__item-sup .price__item-sup--additionally-promo-title::before {
+    right: 7px;
+    top: 14px;
+    background-size: 27px; }
+
+  .price__item-contact--title::before {
+    right: 8px;
+    top: 20px;
+    background-size: 37px; }
+
+  .price__item-pay__title::before {
+    right: 8px;
+    top: 19px;
+    background-size: 30px; }
+
+  .prise__item-sup .prise__item-sup--promo-lable--img {
+    width: 100px; }
+
+  .prise__item-sup .stiker::before {
+    bottom: 18px;
+    background-size: 70%;
+    right: -50px; } }
 @media (max-width: 700px) {
   .prise__item-sup--select-product--lable-text {
     font-size: 25px;
@@ -1397,7 +1489,43 @@ ul.footer__menu li.footer__menu-item a {
     padding: 20px; }
 
   button, input, optgroup, select, textarea {
-    font-size: 75%; } }
+    font-size: 75%; }
+
+  .cvv__code::-webkit-input-placeholder {
+    top: 11px; }
+
+  .cvv__code:-ms-input-placeholder {
+    top: 11px; }
+
+  .cvv__code::-ms-input-placeholder {
+    top: 11px; }
+
+  .cvv__code::placeholder {
+    top: 11px; }
+
+  .calendar::-webkit-input-placeholder {
+    top: 11px; }
+
+  .calendar:-ms-input-placeholder {
+    top: 11px; }
+
+  .calendar::-ms-input-placeholder {
+    top: 11px; }
+
+  .calendar::placeholder {
+    top: 11px; }
+
+  .cards::-webkit-input-placeholder {
+    top: 11px; }
+
+  .cards:-ms-input-placeholder {
+    top: 11px; }
+
+  .cards::-ms-input-placeholder {
+    top: 11px; }
+
+  .cards::placeholder {
+    top: 11px; } }
 @media (max-width: 600px) {
   .top::after {
     display: none; }
@@ -1446,7 +1574,8 @@ ul.footer__menu li.footer__menu-item a {
     font-size: 18px; }
 
   .prise__item-sup .stiker::before {
-    right: -30px; }
+    right: -80px;
+    bottom: 6px; }
 
   .prise__item-sup .price__item-sup--additionally-alternative, .prise__item-sup .price__item-sup--additionally-insurance, .prise__item-sup--select {
     padding: 15px; }
@@ -1505,7 +1634,26 @@ ul.footer__menu li.footer__menu-item a {
 
   .countdown__text {
     line-height: 25px;
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .countdown__text span {
+    padding-right: 0px; }
+
+  .price__item-contact--form-wrapper--input::-webkit-input-placeholder,
+  .price__item-contact--form-inner--input::-webkit-input-placeholder {
+    top: 13px; }
+
+  .price__item-contact--form-wrapper--input:-ms-input-placeholder,
+  .price__item-contact--form-inner--input:-ms-input-placeholder {
+    top: 13px; }
+
+  .price__item-contact--form-wrapper--input::-ms-input-placeholder,
+  .price__item-contact--form-inner--input::-ms-input-placeholder {
+    top: 13px; }
+
+  .price__item-contact--form-wrapper--input::placeholder,
+  .price__item-contact--form-inner--input::placeholder {
+    top: 13px; } }
 @media (max-width: 500px) {
   .sales__title-1,
   .sales__title-3 {
@@ -1525,7 +1673,9 @@ ul.footer__menu li.footer__menu-item a {
     padding: 20px; }
 
   .prise__item-sup .stiker::before {
-    display: none; }
+    right: -104px;
+    bottom: -8px;
+    background-size: 54%; }
 
   .prise__item-sup--select-product--lable-fake {
     top: 8px;
@@ -1671,14 +1821,12 @@ ul.footer__menu li.footer__menu-item a {
     top: 4px; }
 
   .prise__item-sup--promo-title::before {
-    top: -3px; }
-
-  .prise__item-sup .prise__item-sup--promo-lable--img {
-    display: none; }
+    top: 3px; }
 
   .prise__item-sup--promo-lable--wrapper {
     max-width: 300px;
-    padding: 10px; }
+    padding: 0px;
+    max-height: 100px; }
 
   .prise__item-sup--promo-lable {
     font-size: 16px;
@@ -1754,4 +1902,9 @@ ul.footer__menu li.footer__menu-item a {
   .footer__copy-text {
     margin-bottom: 18px;
     font-size: 14px;
-    line-height: 14px; } }
+    line-height: 14px; }
+
+  .prise__item-sup .stiker::before {
+    right: -122px;
+    bottom: -17px;
+    background-size: 43%; } }
