@@ -2013,7 +2013,7 @@ ul.footer__menu li.footer__menu-item a {
     top: 5px; }
 
   .prise__item-sup .price__item-sup--additionally-alternative-select--fake::before {
-    background-size: 97%; }
+    background-size: 104%; }
 
   .prise__item-sup .price__item-sup--additionally-alternative-select--text {
     line-height: 40px; }
@@ -2117,7 +2117,7 @@ ul.footer__menu li.footer__menu-item a {
 
   ul.footer__menu li.footer__menu-item a {
     font-size: 14px;
-    padding: 5px 50px 15px 10px; }
+    padding: 5px 50px 15px 36px; }
 
   ul.footer__menu {
     -webkit-box-orient: inherit;
