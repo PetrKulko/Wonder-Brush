@@ -115,6 +115,7 @@ body{
             width: 100%;
             padding: 16px 0;
             color: #FFF;
+            font-weight: 700;
         }
 
         &:hover{
@@ -510,6 +511,7 @@ body{
                 outline: none;
                 margin-bottom: 34px;
                 position: relative;
+                font-weight: 500;
 
                 &::placeholder{
                     color: #291247;
@@ -535,6 +537,7 @@ body{
                 outline: none;
                 margin-bottom: 34px;
                 position: relative;
+                font-weight: 500;
 
                 &::placeholder{
                     color: #291247;
@@ -576,7 +579,7 @@ body{
         &-name--text,
         &-price--text{
             color: #291247;
-            @extend %rubik-bold;
+            @extend %rubik-medium;
             font-size: 34px;
             line-height: 100px;
             text-align: right;
@@ -586,8 +589,14 @@ body{
                 color: #D63422;
             }
         }
+
+        &-name--text{
+            font-weight: 400;
+        }
     }
 }
+
+
 
 // === / price__item-contact ===
 
@@ -630,6 +639,7 @@ body{
         height: 48px;
         padding: 10px 60px 10px 15px;
         outline: none;
+        font-weight: 500;
 
         &:nth-child(2){
             width: 325px;
@@ -651,6 +661,7 @@ body{
         background-image: url(../img/card-white.svg);
         background-repeat: no-repeat;
         background-position: 67% 50%;
+        font-weight: 700;
     }
 
     &--services{
@@ -817,6 +828,7 @@ ul.footer__menu li.footer__menu-item a{
     color: #291247;
     font-size: 28px;
     line-height: 45px;
+    font-weight: 300;
 }
 
 .footer__copy{
@@ -910,5 +922,6 @@ ul.footer__menu li.footer__menu-item a{
             padding-right: 120px
         }
     }
+
 
     @import 'media.scss';
