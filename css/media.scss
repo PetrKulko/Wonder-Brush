@@ -961,11 +961,11 @@
         font-size: 16px;
     }
     .countdown__wrapper {
-        margin-right: 0px;
+        margin-right: 5px;
     }
     .countdown__text {
         line-height: 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
     .footer__copy-text {
         margin-bottom: 18px;
@@ -976,5 +976,8 @@
         right: -122px;
         bottom: -17px;
         background-size: 43%;
+    }
+    .price__item-contact--label::before {
+        right: 240px;
     }
 }

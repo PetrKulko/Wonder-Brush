@@ -2181,11 +2181,11 @@ ul.footer__menu li.footer__menu-item a {
     font-size: 16px; }
 
   .countdown__wrapper {
-    margin-right: 0px; }
+    margin-right: 5px; }
 
   .countdown__text {
     line-height: 20px;
-    font-size: 14px; }
+    font-size: 12px; }
 
   .footer__copy-text {
     margin-bottom: 18px;
@@ -2195,4 +2195,7 @@ ul.footer__menu li.footer__menu-item a {
   .prise__item-sup .stiker::before {
     right: -122px;
     bottom: -17px;
-    background-size: 43%; } }
+    background-size: 43%; }
+
+  .price__item-contact--label::before {
+    right: 240px; } }
