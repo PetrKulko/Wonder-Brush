@@ -1788,7 +1788,7 @@ ul.footer__menu li.footer__menu-item a {
     margin-bottom: 40px; }
 
   .cvv__code {
-    position: static;
+    position: inherit;
     width: 100%; }
 
   .price__item-contact--label {
