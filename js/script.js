@@ -30,8 +30,8 @@ $("#card").mask("9999-9999-9999-9999");
 
 $("#phone").click(function () {
     $(this).setCursorPosition(0);
-}).mask("(999) 999-9999");
-$("#phone").mask("(999) 999-9999");
+}).mask("999-999-9999");
+$("#phone").mask("999-999-99-99");
 
 $("#date").click(function () {
     $(this).setCursorPosition(0);
