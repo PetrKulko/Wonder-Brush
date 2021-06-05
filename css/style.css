@@ -856,7 +856,8 @@ body {
   border: 1px solid #D3D3D3;
   background: #FCFCFC;
   width: 100%;
-  padding: 38px 90px; }
+  padding: 38px 90px;
+  margin-bottom: 50px; }
   .price__item-pay--wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -944,7 +945,8 @@ body {
   direction: rtl;
   background: url(../img/calendar-icon.svg) no-repeat;
   background-position: 94% 50%;
-  position: relative; }
+  position: relative;
+  color: #291247; }
   .calendar::-webkit-input-placeholder {
     position: absolute;
     right: 55px;
@@ -962,6 +964,75 @@ body {
     right: 55px;
     top: 6px; }
 
+.cvvDate {
+  width: 325px;
+  height: 48px;
+  padding: 0;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.cvvDate.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.cvvDate select {
+  padding: 10px 14px;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+  border: 1px solid #D3D3D3;
+  border-radius: 10px;
+  color: #291247; }
+
+#year {
+  width: calc(50% - 4px);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/arrow_custom.svg) no-repeat 10% 50%; }
+
+#month {
+  width: calc(50% - 4px);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/arrow_custom.svg) no-repeat 10% 50%; }
+
+#inputDate.active {
+  display: none; }
+
+#inputDate:hover {
+  background-color: #ffffff; }
+
+@media (max-width: 1250px) {
+  #inputDate,
+  .cvvDate {
+    width: 275px; } }
+@media (max-width: 1150px) {
+  #inputDate,
+  .cvvDate {
+    width: 58%;
+    margin-bottom: 43px; } }
+@media (max-width: 700px) {
+  #inputDate,
+  .cvvDate {
+    width: 58%;
+    margin-bottom: 0px;
+    font-size: 75%; } }
+@media (max-width: 600px) {
+  #inputDate,
+  .cvvDate {
+    width: 48%;
+    font-size: 64%; } }
+@media (max-width: 400px) {
+  #inputDate,
+  .cvvDate {
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 20px 0; } }
 .cards {
   direction: rtl;
   background: url(../img/card.svg) no-repeat 40px/32px;
@@ -2198,4 +2269,6 @@ ul.footer__menu li.footer__menu-item a {
     background-size: 43%; }
 
   .price__item-contact--label::before {
-    right: 240px; } }
+    right: 235px; } }
+
+/*# sourceMappingURL=style.css.map */

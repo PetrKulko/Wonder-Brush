@@ -83,3 +83,12 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(Date.parse(new Date()) + 30 * 60 * 1000); // for endless timer
 initializeClock('countdown', deadline);
+
+const inputDate = document.getElementById('inputDate');
+const req = document.querySelector('.cvvDate');
+inputDate.addEventListener('click', showReq);
+function showReq(e) {
+    e.preventDefault();
+    req.classList.add('active');
+    inputDate.classList.add('active');
+}
