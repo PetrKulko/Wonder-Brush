@@ -992,14 +992,16 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url(../img/arrow_custom.svg) no-repeat 10% 50%; }
+  background: url(../img/arrow_custom.svg) no-repeat 10% 50%;
+  cursor: pointer; }
 
 #month {
   width: calc(50% - 4px);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url(../img/arrow_custom.svg) no-repeat 10% 50%; }
+  background: url(../img/arrow_custom.svg) no-repeat 10% 50%;
+  cursor: pointer; }
 
 #inputDate.active {
   display: none; }

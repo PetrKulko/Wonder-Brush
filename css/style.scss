@@ -752,11 +752,13 @@ body{
     width: calc(50% - 4px);
     appearance: none;
     background: url(../img/arrow_custom.svg) no-repeat 10% 50%;
+    cursor: pointer;
   }
   #month {
     width: calc(50% - 4px);
     appearance: none;
     background: url(../img/arrow_custom.svg) no-repeat 10% 50%;
+    cursor: pointer;
   }
 
   #inputDate.active {
