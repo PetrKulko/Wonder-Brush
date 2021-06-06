@@ -77,7 +77,10 @@
     padding: 38px 38px; }
 
   .price__item-pay--input {
-    width: 380px; } }
+    width: 380px; }
+
+  .top__items li.top__item::before {
+    top: -7px; } }
 @media (max-width: 1250px) {
   .top::after {
     height: 260px; }

@@ -432,7 +432,7 @@ body {
       width: 35px;
       height: 35px;
       right: -30px;
-      top: -7px; }
+      top: 3px; }
   .top__btn {
     max-width: 870px;
     background-color: #C84772;
@@ -1311,7 +1311,10 @@ ul.footer__menu li.footer__menu-item a {
     padding: 38px 38px; }
 
   .price__item-pay--input {
-    width: 380px; } }
+    width: 380px; }
+
+  .top__items li.top__item::before {
+    top: -7px; } }
 @media (max-width: 1250px) {
   .top::after {
     height: 260px; }
