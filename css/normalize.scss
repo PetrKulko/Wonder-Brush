@@ -382,3 +382,26 @@ img{
   width: 100%;
   height: auto;
 }
+
+// == прижатие footer ==
+
+html,
+body {
+  height: 100%;
+}
+
+.for__page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+// == / прижатие footer ==
