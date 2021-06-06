@@ -467,7 +467,8 @@ body {
   .sales__text-content {
     font-size: 40px;
     line-height: 86px;
-    max-width: 635px; }
+    max-width: 635px;
+    white-space: nowrap; }
   .sales__text-numb {
     font-size: 60px;
     line-height: 35px;
@@ -2276,5 +2277,3 @@ ul.footer__menu li.footer__menu-item a {
 
   .price__item-contact--label::before {
     right: 235px; } }
-
-/*# sourceMappingURL=style.css.map */

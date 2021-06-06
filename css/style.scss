@@ -154,7 +154,8 @@ body{
             @extend %rubik-bold;
             font-size: 40px;
             line-height: 86px;
-            max-width: 635px
+            max-width: 635px;
+            white-space:nowrap;
         }
 
         &-numb{
