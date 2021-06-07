@@ -72,7 +72,7 @@ body{
     &::after{
         content: "";
         background: linear-gradient(268.62deg, #FFF3F7 25.85%, #EFD1DC 83.16%);
-        height: 364px;
+        height: 50%;
         width: 100%;
         position: absolute;
         top: 100px;
@@ -89,6 +89,10 @@ body{
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
+    }
+
+    .top__items{
+        max-width: 1030px;
     }
 
     &__item{
